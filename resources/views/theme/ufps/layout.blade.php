@@ -47,6 +47,7 @@
         <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/css/custom-hover-effects.min.css")}}">
         <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/css/custom.min.css")}}">
         <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/css/pgwslider.min.css")}}">
+    <link type="text/css" rel="stylesheet" href="{{asset("asserts/lte/dist/css/AdminLTE.min.css")}}"
         <!--Jvectormap -->
         <link rel="stylesheet" href="{{asset("assets/css/jquery-jvectormap-2.0.3.css")}}">
 

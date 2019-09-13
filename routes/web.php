@@ -11,4 +11,13 @@
 |
 */
 
+use weborii\Http\Controllers\ExperienciaController;
+
 Route::get('/', 'InicioController@index');
+
+Route::get('noticia','NoticiaController@index')->name('noticia');
+Route::get('noticia/completa/{idNoticia}','NoticiaController@detalle')->name('noticia_completa');
+
+Route::get('experiencia','ExperienciaController@index')->name('experiencia');
+
+Route::get('convocatoria','ConvocatoriaController@index')->name('convocatoria');

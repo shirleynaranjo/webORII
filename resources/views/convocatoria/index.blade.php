@@ -1,0 +1,43 @@
+@extends("theme.$theme.layout")
+@section('titulo')
+Convocatoria
+@endsection
+@section('content')
+
+@section('titulo1')
+Convocatorias
+@endsection
+
+<div class="wrapper">
+    <!-- Inicio Header Noticia-->
+    @include("theme/$theme/headertitulo")
+    <!-- Fin Header Noticias-->
+</div>
+
+
+<div class="container content profile">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title"></h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table class="table table-bordered table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th style="width: 10px">Convocatoria</th>
+                                <th>Organismo Oferente</th>
+                                <th style="width: 40px">Vigencia</th>
+                                <th>Información</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@endsection
