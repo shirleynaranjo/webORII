@@ -3,9 +3,8 @@
 namespace weborii\Http\Controllers;
 
 use Illuminate\Http\Request;
-use weborii\Models\Convocatoria;
 
-class ConvocatoriaController extends Controller
+class PresentacionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class ConvocatoriaController extends Controller
      */
     public function index()
     {
-        $convocatorias = Convocatoria::orderBy('idConvocatoria')->get();
-        return view('convocatoria.index', compact('convocatorias'));
+        return view('presentacion.presentacion');
     }
 
     /**

@@ -169,7 +169,7 @@
                         </li>
     
                         <li>
-                            <a href="{{url("")}}">
+                            <a href="{{route('convocatoria')}}">
                                 Convocatorias
                             </a>
                         </li>

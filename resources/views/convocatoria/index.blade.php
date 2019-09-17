@@ -29,10 +29,25 @@ Convocatorias
                             <tr>
                                 <th style="width: 10px">Convocatoria</th>
                                 <th>Organismo Oferente</th>
+                                <th>Fecha de cierre</th>
                                 <th style="width: 40px">Vigencia</th>
                                 <th>Información</th>
                             </tr>
                         </thead>
+
+                        <tbody>
+                            @foreach ($convocatorias as $convocatoria)
+                            <tr>
+                                <td>{{$convocatoria->nombreConvocatoria}}</td>
+                                <td>{{$convocatoria->oferenteConvocatoria}}</td>
+                                <td>{{$convocatoria->fechaCierre}}</td>
+                                <td>{{$convocatoria->vigenciaConvocatoria}}</td>
+                                <td>{{$convocatoria->informacion}}</td>
+
+                            </tr>
+                            @endforeach
+
+                        </tbody>
                     </table>
                 </div>
             </div>

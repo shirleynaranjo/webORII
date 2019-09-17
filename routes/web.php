@@ -21,3 +21,5 @@ Route::get('noticia/completa/{idNoticia}','NoticiaController@detalle')->name('no
 Route::get('experiencia','ExperienciaController@index')->name('experiencia');
 
 Route::get('convocatoria','ConvocatoriaController@index')->name('convocatoria');
+
+Route::get('presentacion','PresentacionController@index')->name('presentacion');

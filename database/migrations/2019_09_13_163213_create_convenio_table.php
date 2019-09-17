@@ -14,9 +14,18 @@ class CreateConvenioTable extends Migration
     public function up()
     {
         Schema::create('convenio', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('idConvenio');
+            $table->string('codigoConvenio',20);
+            $table->string('tituloConvenio',200);
+            $table->string('objetoConvenio',1000);
+            $table->string('vigenciaConvenio',45);
+            $table->string('fechaExpedicion',10);
+            $table->string('fechaTerminacion',10);   
             $table->timestamps();
+            $table->charset='utf8mb4';
+            $table->collation='utf8mb4_spanish2_ci';
         });
+
     }
 
     /**
