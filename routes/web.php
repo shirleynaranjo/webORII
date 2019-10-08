@@ -23,3 +23,5 @@ Route::get('experiencia','ExperienciaController@index')->name('experiencia');
 Route::get('convocatoria','ConvocatoriaController@index')->name('convocatoria');
 
 Route::get('presentacion','PresentacionController@index')->name('presentacion');
+
+Route::get('mapa','convenioController@index')->name('mapa');

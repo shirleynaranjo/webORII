@@ -1,3 +1,3 @@
-$('#world-map').vectorMap({
+/*$('#world-map').vectorMap({
     map: 'world_mill'
-}); 
+}); */

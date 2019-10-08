@@ -10,7 +10,7 @@ Oficina de Relaciones Interinstitucionales e Internacionales
 
 <div class="wrapper">
     <!-- Inicio Header -->
-    @include("theme/$theme/headertitulo")
+    @include("theme.$theme.headertitulo")
     <!-- Fin Header -->
 </div>
 

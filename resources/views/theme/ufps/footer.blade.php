@@ -67,7 +67,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <p>
-                                2016 © All Rights Reserved.
+                                2019 © All Rights Reserved.
                                  Desarrollado por: <a href="#">VAVM - División de Sistemas</a>
                             </p>
                         </div>
@@ -109,51 +109,51 @@
         </div>
         
         
-        <div class="owl-clients-v1" style="background-color:#EEE; padding: 5px;">
+        <div class="owl-carousel owl-theme" style="background-color:#EEE; padding: 5px; display:block; height: 75px;">
             <div class="item">
-                <a href="http://www.mineducacion.gov.co/"><img src="img/mineducacion.png"class="hover-shadow" alt=""></a>
+                <a href="http://www.mineducacion.gov.co/"><img src="{{asset("assets/$theme/img/mineducacion.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.contraloriagen.gov.co/"><img src="img/contraloria.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.contraloria.gov.co/"><img src="{{asset("assets/$theme/img/contraloria.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.procuraduria.gov.co/"><img src="img/procuraduriageneraldelanacion.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.procuraduria.gov.co/"><img src="{{asset("assets/$theme/img/procuraduriageneraldelanacion.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.gobiernoenlinea.gov.co/"><img src="img/gobiernoenlinea.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.gobiernoenlinea.gov.co/"><img src="{{asset("assets/$theme/img/gobiernoenlinea.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.urnadecristal.gov.co/"><img src="img/urnadecristal.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.urnadecristal.gov.co/"><img src="{{asset("assets/$theme/img/urnadecristal.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.icfes.gov.co/"><img src="img/icfes.png"class="hover-shadow" alt=""></a>
+                <a href="http://www.icfes.gov.co/"><img src="{{asset("assets/$theme/img/icfes.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.icetex.gov.co/"><img src="img/icetex.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.icetex.gov.co/"><img src="{{asset("assets/$theme/img/icetex.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.universia.net.co/"><img src="img/universia.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.universia.net.co/"><img src="{{asset("assets/$theme/img/universia.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.colombiaaprende.edu.co/"><img src="img/colombiaaprende.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.colombiaaprende.edu.co/"><img src="{{asset("assets/$theme/img/colombiaaprende.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.renata.edu.co/"><img src="img/renata-logo.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.renata.edu.co/"><img src="{{asset("assets/$theme/img/renata-logo.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.colciencias.gov.co/"><img src="img/COLCIENCIAS.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.colciencias.gov.co/"><img src="{{asset("assets/$theme/img/COLCIENCIAS.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.cna.gov.co/"><img src="img/cna.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.cna.gov.co/"><img src="{{asset("assets/$theme/img/cna.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/propertyvalue-41698.html"><img src="img/SACES.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/propertyvalue-41698.html"><img src="{{asset("assets/$theme/img/SACES.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/w3-propertyname-2672.html"><img src="img/SNIES.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/w3-propertyname-2672.html"><img src="{{asset("assets/$theme/img/SNIES.png")}}" class="hover-shadow" alt=""></a>
             </div>
             <div class="item">
-                <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/w3-propertyname-2895.html"><img src="img/SPADIES.png" class="hover-shadow" alt=""></a>
+                <a href="http://www.mineducacion.gov.co/sistemasdeinformacion/1735/w3-propertyname-2895.html"><img src="{{asset("assets/$theme/img/SPADIES.png")}}" class="hover-shadow" alt=""></a>
             </div>
         
         

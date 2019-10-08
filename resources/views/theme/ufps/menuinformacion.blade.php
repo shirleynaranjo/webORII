@@ -35,11 +35,15 @@
                             Convocatorias</a></li>
 
                     <li class="list-group-item" style="border:none; border-bottom: 1px solid #DDDEDF;"><a
-                            href="{{route('convocatoria')}}"
-                            class="text-menu"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Contacto</a>
+                            href="{{route('convocatoria')}}" class="text-menu"><i class="fa fa-chevron-circle-right"
+                                aria-hidden="true"></i>
+                            Formatos</a></li>
+
+                    <li class="list-group-item" style="border:none; border-bottom: 1px solid #DDDEDF;"><a
+                            href="{{route('convocatoria')}}" class="text-menu"><i class="fa fa-chevron-circle-right"
+                                aria-hidden="true"></i> Contacto</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
-    

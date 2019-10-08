@@ -91,14 +91,14 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-4 col-xs-5">
                                 <a href="#">
-                                    <img id="logo-header" src="{{asset("assets/$theme/img/logo_vertical_ORI.png")}}"
+                                    <img id="logo-header" src="{{url("https://ww2.ufps.edu.co/public/imagenes/template/header/logo_ufps.png")}}"
                                         alt="Logo UFPS">
                                 </a>
                             </div>
-                            <div class="col-md-2 col-ms-1 col-xs-2 pull-right">
-                                <a href="http://www.colombia.co/">
-                                    <img class="header-banner" src="{{asset("assets/$theme/img/logo_ufps1.png")}}"
-                                        alt="Escudo de Colombia">
+                            <div class="col-md-4 col-ms-3 col-xs-3 pull-right">
+                                <a href="">
+                                    <img class="header-banner" src="{{asset("assets/$theme/img/logo_vertical_ORI_1.png")}}"
+                                        alt="ORII">
                                 </a>
                             </div>
                         </div>
@@ -134,10 +134,12 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
-                                    <a href="javascript:void(0);">Presentación</a>
+                                    <a href="javascript:void(0);">Quienes Somos</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="{{url("")}}"><i class="fa fa-sitemap" aria-hidden="true"></i>Misión</a></li>
-                                        <li><a href="{{url("")}}"><i class="fa fa-sitemap" aria-hidden="true"></i>Visión</a></li>
+                                        <li><a href="{{route('presentacion')}}"><i class="fa fa-sitemap" aria-hidden="true"></i>Presentacion</a></li>
+                                        <li><a href="{{route('convocatoria')}}"><i class="fa fa-sitemap" aria-hidden="true"></i>Convocatorias</a></li>
+                                        <li><a href="{{url("")}}"><i class="fa fa-sitemap" aria-hidden="true"></i>Formatos</a></li>
+                                        <li><a href="{{url("")}}"><i class="fa fa-sitemap" aria-hidden="true"></i>Contacto</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="{{route('noticia')}}">Noticias</a></li>
@@ -147,7 +149,7 @@
                         </li>
     
                         <li>
-                                <a href="{{url("")}}">
+                                <a href="{{route('mapa')}}">
                                 Convenios
                             </a>
                         </li>
