@@ -96,9 +96,4 @@
         <script src="{{asset("assets/js/src/js/lib/jquery-jvectormap-2.0.3.min.js")}}"></script>
         <script src="{{asset("assets/js/src/js/lib/jquery-jvectormap-world-mill-en.js")}}"></script>
         <script src="{{asset("assets/js/funciones.js")}}"></script>
-
-        
-
-            
-
     </body>
