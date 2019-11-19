@@ -34,10 +34,10 @@ Oficina de Relaciones Interinstitucionales e Internacionales
 
                     <p>&nbsp;</p>
 
-                    <p><strong>Director:</strong> Nelson Emilio García Torres<br />
-                        <strong>Correo institucional:</strong>relacionesinternacionales@ufps.edu.co <br />
-                        <strong>Tel&eacute;fono:</strong> <br />
-                        <strong>Ubicaci&oacute;n:</strong> Edificio Torre Administrativa, Of. TA 304<br />
+                    <p><strong>Director:</strong>{{$item->director}}<br />
+                        <strong>Correo institucional:</strong>{{$item->correo}}<br />
+                        <strong>Tel&eacute;fono:</strong>{{$item->telefono}} <br />
+                        <strong>Ubicaci&oacute;n:</strong>{{$item->ubicacion}}<br />
                         <strong>Horario de atenci&oacute;n:</strong> lunes a viernes 8:00 a.m. a 12:00 m. y 2:00 p.m. a
                         6:00 p.m.</p>
                 </h5>
@@ -55,9 +55,6 @@ Oficina de Relaciones Interinstitucionales e Internacionales
 </div>
 </div>
 </div>
-<div class="wrapper">
-    <!-- Inicio Header Noticia-->
-    @include("theme/$theme/footerultimasnoticia")
-    <!-- Fin Header Noticias-->
-</div>
+
+
 @endsection

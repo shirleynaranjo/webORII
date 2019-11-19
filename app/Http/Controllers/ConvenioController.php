@@ -3,6 +3,7 @@
 namespace weborii\Http\Controllers;
 
 use Illuminate\Http\Request;
+use weborii\Models\Noticia;
 
 class ConvenioController extends Controller
 {
@@ -13,7 +14,8 @@ class ConvenioController extends Controller
      */
     public function index()
     {
-        return view('convenio.mapa');
+        $noticias = Noticia::latest('idNoticia')->take(3)->get();
+        return view('convenio.mapa',compact('noticias'));
     }
 
     /**

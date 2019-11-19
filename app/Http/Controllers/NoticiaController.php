@@ -17,14 +17,15 @@ class NoticiaController extends Controller
      */
     public function index()
     {
-    $noticias = Noticia::orderBy('idNoticia')->get();
+    $noticias = Noticia::orderBy('idNoticia','desc')->get();
     return view('noticia.index',compact('noticias'));
     }
 
     public function detalle($idNoticia)
     {
         $noticia = Noticia::findOrFail($idNoticia);
-        return view('noticia.completa',compact('noticia'));
+        $noticias = Noticia::latest('idNoticia')->take(3)->get();
+        return view('noticia.completa',compact('noticia','noticias'));
     }
 
     /**

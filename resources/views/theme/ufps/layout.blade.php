@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css"
             href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
         <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/css/bootstrap.min.css")}}">
+        {{-- <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/plugins/fancybox/css/jquery.fancybox.min.css")}}"> --}}
         <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/css/ie8.min.css")}}">
         <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/css/blocks.min.css")}}">
         <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/css/plugins.min.css")}}">
@@ -50,6 +51,8 @@
         <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/css/custom-hover-effects.min.css")}}">
         <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/css/custom.min.css")}}">
         <link type="text/css" rel="stylesheet" href="{{asset("assets/ufps/css/pgwslider.min.css")}}">
+
+
         <section class="style">
             @yield('style')
         </section>
@@ -68,6 +71,31 @@
                     @yield('content')
                 </section>
             </div>
+            <!-- ICONOS REDES SOCIALES -->
+            <div class="cuadroredes" style="height: 190px">
+                <ul class="social-icons social-icons-color margin-top-10">
+                    <li class="tooltips" data-toggle="tooltip" data-placement="bottom"
+                        data-original-title="Síguenos en Facebook"><a
+                            href="https://www.facebook.com/"
+                            class="rounded social_facebook"></a>
+                    </li>
+                    <li class="tooltips" data-toggle="tooltip" data-placement="bottom"
+                        data-original-title="Síguenos en Twitter"><a href="https://twitter.com"
+                            class="rounded social_twitter"></a>
+                        </li>
+                    <li class="tooltips" data-toggle="tooltip" data-placement="bottom"
+                        data-original-title="Síguenos en Youtube"><a
+                            href="https://www.youtube.com/"
+                            class="rounded social_youtube"></a>
+                        </li>
+                    <li class="tooltips" data-toggle="tooltip" data-placement="bottom"
+                        data-original-title="Síguenos en Instagram">
+                        <a href="https://www.instagram.com/" class="rounded social_instagram"></a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- FIN ICONOS REDES SOCIALES -->
             <!-- Inicio Footer -->
             @include("theme/$theme/footer")
             <!-- Fin Footer -->
@@ -93,6 +121,8 @@
         <script type="text/javascript" src="{{asset("assets/ufps/js/jquery.mCustomScrollbar.concat.min.js")}}"></script>
         <script type="text/javascript" src="{{asset("assets/ufps/js/owl-recent-works.min.js")}}"></script>
         <script type="text/javascript" src="{{asset("assets/ufps/js/wow.min.js")}}"></script>
+
+
         <script>
             $(document).ready(function(){
                         $(".owl-carousel").owlCarousel();

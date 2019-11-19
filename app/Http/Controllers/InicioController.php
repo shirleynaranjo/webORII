@@ -3,6 +3,8 @@
 namespace weborii\Http\Controllers;
 
 use Illuminate\Http\Request;
+use weborii\Models\Evento;
+use weborii\Models\Noticia;
 
 class InicioController extends Controller
 {
@@ -13,7 +15,10 @@ class InicioController extends Controller
      */
     public function index()
     {
-        return view('inicio');
+        $noticias = Noticia::latest('idNoticia')->take(4)->get();
+        $eventos = Evento::latest('idEvento')->take(4)->get();
+        return view('inicio', compact('noticias','eventos'));
+        
     }
 
     /**

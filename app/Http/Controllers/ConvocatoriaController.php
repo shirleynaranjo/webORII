@@ -4,6 +4,7 @@ namespace weborii\Http\Controllers;
 
 use Illuminate\Http\Request;
 use weborii\Models\Convocatoria;
+use weborii\Models\Noticia;
 
 class ConvocatoriaController extends Controller
 {
@@ -15,7 +16,8 @@ class ConvocatoriaController extends Controller
     public function index()
     {
         $convocatorias = Convocatoria::orderBy('idConvocatoria')->get();
-        return view('convocatoria.index', compact('convocatorias'));
+        $noticias = Noticia::latest('idNoticia')->take(3)->get();
+        return view('convocatoria.index', compact('convocatorias','noticias'));
     }
 
     /**

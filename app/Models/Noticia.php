@@ -8,7 +8,7 @@ class Noticia extends Model
 {
     protected $table='noticia';
     protected $primaryKey = 'idNoticia';
-    protected $fillable = ['nombreNoticia','descripcionNoticia','autoresNoticia'];
+    protected $fillable = ['tituloNoticia','descripcionNoticia','fechaPublicacion'];
     protected $guarded = ['idNoticia'];
 
 }

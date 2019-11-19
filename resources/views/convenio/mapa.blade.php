@@ -6,62 +6,62 @@ Mapa de Convenios
 @section('style')
 <style type="text/css">
 	.mapael .map {
-        position: relative;
-        border-top: solid 0px;
+		position: relative;
+		border-top: solid 0px;
 		border-bottom: solid 0px;
-    }
+	}
 
 	/* For all zoom buttons */
 	.mapael .zoomButton {
-            background-color: #A4A4A4;
-            border: 1px solid #E6E6E6;
-            color: #000;
-            width: 20px;
-            height: 20px;
-            line-height: 20px;
-            text-align: center;
-            border-radius: 0px;
-            cursor: pointer;
-            position: absolute;
-            top: 0;
-            font-weight: bold;
-            left: 0px;
+		background-color: #A4A4A4;
+		border: 1px solid #E6E6E6;
+		color: #000;
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		border-radius: 0px;
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		font-weight: bold;
+		left: 0px;
 
-            -webkit-user-select: none;
-            -khtml-user-select : none;
-            -moz-user-select: none;
-            -o-user-select : none;
-            user-select: none;
-        }
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
 
-        /* Reset Zoom button first */
-        .mapael .zoomReset {
-            top: 5px;
-        }
+	/* Reset Zoom button first */
+	.mapael .zoomReset {
+		top: 5px;
+	}
 
-        /* Then Zoom In button */
-        .mapael .zoomIn {
-            top: 25px;
-        }
+	/* Then Zoom In button */
+	.mapael .zoomIn {
+		top: 25px;
+	}
 
-        /* Then Zoom Out button */
-        .mapael .zoomOut {
-            top: 45px;
-        }
+	/* Then Zoom Out button */
+	.mapael .zoomOut {
+		top: 45px;
+	}
 
-    .mapael .mapTooltip {
-        position: absolute;
-        background-color: #fff;
-        moz-opacity: 0.70;
-        opacity: 0.70;
-        filter: alpha(opacity=70);
-        border-radius: 10px;
-        padding: 10px;
-        z-index: 1000;
-        max-width: 200px;
-        display: none;
-        color: #343434;
-    }
+	.mapael .mapTooltip {
+		position: absolute;
+		background-color: #fff;
+		moz-opacity: 0.70;
+		opacity: 0.70;
+		filter: alpha(opacity=70);
+		border-radius: 10px;
+		padding: 10px;
+		z-index: 1000;
+		max-width: 200px;
+		display: none;
+		color: #343434;
+	}
 </style>
 @endsection
 
@@ -76,12 +76,23 @@ Convenios
 </div>
 
 <div class="container content profile">
-	<div class="col-sm-11">
-		<div class="mapcontainer">
-			<div class="map">
+	<div class="row">
+		<div class="col-sm-11">
+			<div class="mapcontainer">
+				<div class="map">
+				</div>
 			</div>
 		</div>
 	</div>
+	
+	<div class="wrapper">
+			<div class="row margin-top-60">
+			<!-- Inicio Header Noticia-->
+			@include("noticia/footerultimasnoticia")
+			</div>
+			<!-- Fin Header Noticias-->
+		</div>
+
 </div>
 
 
@@ -143,8 +154,8 @@ Convenios
 					/*"BI" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					"BJ" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: "},*/
 					/*"BN" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Brunéi</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
-					"BO" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Bolivia</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
-					"BR" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Brazil</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
+					"BO" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Bolivia</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},*/
+					"BR" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Brasil</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					/*"BS" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					"BT" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					"BW" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
@@ -172,7 +183,7 @@ Convenios
 					"EC" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Ecuador</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					/*"EE" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					"EG" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
-					"ER" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
+					"ER" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},*/
 					"ES" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>España</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					/*"ET" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					"FI" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Finlandia</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
@@ -297,9 +308,9 @@ Convenios
 					"UG" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},*/
 					"US" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Estados Unidos</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					/*"UY" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Uruguay </b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
-					/*"UZ" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
-					"VE" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
-					"VN" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Vietnam</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
+					/*"UZ" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},*/
+					"VE" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Venezuela</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
+					/*"VN" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Vietnam</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					/*"VU" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					"WS" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b>Samoa</b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},
 					/*"YE" : {text: {content: "", attrs: {"font-size": 12}},tooltip: {content: "<b></b> <br /> "},attrs: {fill: "#500101"}, attrsHover: {fill: "#800101"}, href: ""},

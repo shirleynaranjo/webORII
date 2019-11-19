@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNoticiaTable extends Migration
+class CreateEventoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateNoticiaTable extends Migration
      */
     public function up()
     {
-        Schema::create('noticia', function (Blueprint $table) {
-            $table->bigIncrements('idNoticia');
-            $table->string('tituloNoticia',500);           
-            $table->string('descripcionNoticia',5000);
-            $table->string('fechaPublicacion',500);            
+        Schema::create('evento', function (Blueprint $table) {
+            $table->bigIncrements('idEvento');
+            $table->string('tituloEvento',500);           
+            $table->string('lugarEvento',500);
+            $table->string('fechaEvento',500);
+            $table->string('horaEvento',500);
+            $table->string('descripcion',5000);
             $table->timestamps();
             $table->charset='utf8mb4';
             $table->collation='utf8mb4_spanish2_ci';
@@ -31,6 +33,6 @@ class CreateNoticiaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('noticia');
+        Schema::dropIfExists('evento');
     }
 }

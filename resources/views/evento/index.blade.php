@@ -1,14 +1,15 @@
 @extends("theme.$theme.layout")
 @section('titulo')
-Convocatoria
+Eventos
 @endsection
 @section('content')
 
 @section('titulo1')
-Convocatorias
+Eventos
 @endsection
 @section('style')
-<link rel="stylesheet" type="text/css" href="{{asset("assets/ufps/plugins/dataTables/css/dataTables.bootstrap.min.css")}}">
+<link rel="stylesheet" type="text/css"
+    href="{{asset("assets/ufps/plugins/dataTables/css/dataTables.bootstrap.min.css")}}">
 @endsection
 
 <div class="wrapper">
@@ -25,22 +26,22 @@ Convocatorias
                 <table id="table_noticia" class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th style="width: 20%">Convocatoria</th>
-                            <th style="width: 10%">Oferente</th>
-                            <th>Fecha de cierre</th>
-                            <th>Vigencia</th>
-                            <th>Información</th>
+                            <th>Titulo</th>
+                            <th style="width: 20%">Lugar</th>
+                            <th style="width: 20%">Fecha</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        @foreach ($convocatorias as $convocatoria)
+                        @foreach ($eventos as $evento)
                         <tr>
-                            <td>{{$convocatoria->nombreConvocatoria}}</td>
-                            <td>{{$convocatoria->oferenteConvocatoria}}</td>
-                            <td><i style="text-transform: none; color: #AA1916;">{{$convocatoria->fechaCierre}}</i></td>
-                            <td>{{$convocatoria->vigenciaConvocatoria}}</td>
-                            <td><i style="text-transform: none; color: #AA1916;">{{$convocatoria->informacion}}</i></td>
+                            <td>
+                                <a href="{{route('evento_completa', ['idEvento'=> $evento->idEvento])}}">
+                                    {{$evento->tituloEvento}}
+                                </a>
+                            </td>
+                            <td>{{$evento->lugarEvento}}</td>
+                            <td>{{$evento->fechaEvento}}</td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -52,7 +53,7 @@ Convocatorias
         <!-- Inicio Header Noticia-->
         @include("noticia/footerultimasnoticia")
         <!-- Fin Header Noticias-->
-</div>
+    </div>
 </div>
 
 @section('script')

@@ -3,25 +3,28 @@
 namespace weborii\Http\Controllers;
 
 use Illuminate\Http\Request;
-use weborii\Models\Presentacion;
+use weborii\Models\Evento;
+use weborii\Models\Noticia;
 
-
-class PresentacionController extends Controller
+class EventoController extends Controller
 {
-    /** 
-     * 
-     */ 
-    public function index($idPresentacion)    {
-       
-        $item = Presentacion::findOrFail($idPresentacion);
-        return view('presentacion.index',compact('item'));           
-    }
-    
     /**
-     * 
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
      */
-    public function detalle(){
+    public function index()
+    {
+        $eventos = Evento::orderBy('idEvento','desc')->get();
+        $noticias = Noticia::latest('idNoticia')->take(3)->get();
+        return view('evento.index', compact('eventos','noticias'));
+    }
 
+    public function detalle($idEvento)
+    {
+        $evento = Evento::findOrFail($idEvento);
+        $noticias = Noticia::latest('idNoticia')->take(3)->get();
+        return view('evento.completa',compact('evento','noticias'));
     }
 
     /**
@@ -42,7 +45,7 @@ class PresentacionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      
     }
 
     /**

@@ -13,7 +13,7 @@
                             class="collapsed text-menu" aria-expanded="false"><i class="fa fa-chevron-circle-right"
                                 aria-hidden="true"></i> Quiénes Somos</a>
                         <ul id="collapse-145" class="collapse" aria-expanded="false">
-                            <li style="border:none;"><a href="{{url("")}}" class="text-submenu"
+                            <li style="border:none;"><a href="{{route('presentacion')}}" class="text-submenu"
                                     style="border:none; border-bottom: 1px solid #DDDEDF;"><i
                                         class="fa fa-angle-double-right" aria-hidden="true"></i> Presentación</a></li>
                             <li style="border:none;"><a href="{{url("")}}" class="text-submenu"
@@ -22,18 +22,9 @@
                             <li style="border:none;"><a href="{{url("")}}" class="text-submenu"
                                     style="border:none; border-bottom: 1px solid #DDDEDF;"><i
                                         class="fa fa-angle-double-right" aria-hidden="true"></i> Visión</a></li>
-                            <li style="border:none;"><a href="{{url("")}}" class="text-submenu"
-                                    style="border:none; border-bottom: 1px solid #DDDEDF;"><i
-                                        class="fa fa-angle-double-right" aria-hidden="true"></i> Objetivos</a></li>
+                           
                         </ul>
                     </li>
-
-
-                    <li class="list-group-item" style="border:none; border-bottom: 1px solid #DDDEDF;"><a
-                            href="{{route('convocatoria')}}" class="text-menu"><i class="fa fa-chevron-circle-right"
-                                aria-hidden="true"></i>
-                            Convocatorias</a></li>
-
                     <li class="list-group-item" style="border:none; border-bottom: 1px solid #DDDEDF;"><a
                             href="{{route('convocatoria')}}" class="text-menu"><i class="fa fa-chevron-circle-right"
                                 aria-hidden="true"></i>

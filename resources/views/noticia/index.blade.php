@@ -7,7 +7,10 @@ Noticia
 @section('titulo1')
 Listado Noticias
 @endsection
-
+@section('style')
+<link rel="stylesheet" type="text/css"
+   href="{{asset("assets/ufps/plugins/dataTables/css/dataTables.bootstrap.min.css")}}">
+@endsection
 <div class="wrapper">
    <!-- Inicio Header Noticia-->
    @include("theme/$theme/headertitulo")
@@ -16,52 +19,43 @@ Listado Noticias
 <!--=== Content Part ===-->
 <div class="container content profile">
    <div class="row">
-      <div class="col-md-9">
-         <!--CONTENIDO-->
-         <div class="box">
-            <!--<div class="box-header">
-                         
-                          <div class="box-tools">
-                              <div class="input-group input-group-sm hidden-xs" style="width: 150px;">
-                                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
-      
-                                  <div class="input-group-btn">
-                                      <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>-->
+      <div class="col-md-12">
+         <div class="box-body table-responsive no-padding">
+            <table id="table_noticia" class="table table-bordered table-striped">
+               <thead>
+                  <tr>
+                     <th>Titulo</th>
+                     <th>Fecha</th>                     
+                  </tr>
+               </thead>
+               <tbody>
+                  @foreach ($noticias as $noticia)
+                  <tr>
+                     <td>
+                        <h3>
+                        <a href="{{route('noticia_completa', ['idNoticia'=> $noticia->idNoticia])}}">
+                           {{$noticia->tituloNoticia}}
+                        </a>
+                     </h3>
+                     </td>   
+                     <td><i style="text-transform: none; color: #AA1916;">{{$noticia->fechaPublicacion}}</i></td>                  
+                  </tr>
+                  @endforeach
 
-            <div class="box-body">
-               <table class="table table-bordered">
-                  <thead>
-                     <tr>
-                        <th style="width: 10%">No</th>
-                        <th style="width: 30%">Titulo</th>
-                        <th>Descripción</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     @foreach ($noticias as $noticia)
-                     <tr>
-                        <td>{{$noticia->idNoticia}}</td>
-                        <td>
-                           <a href="{{route('noticia_completa', ['idNoticia'=> $noticia->idNoticia])}}">
-                              {{$noticia->nombreNoticia}}
-                           </a>
-                        </td>
-                        <td>{{$noticia->descripcionNoticia}}</td>
-
-                     </tr>
-                     @endforeach
-
-                  </tbody>
-               </table>
-            </div>
+               </tbody>
+            </table>
          </div>
       </div>
    </div>
-
 </div>
+
+@section('script')
+<!-- DataTables-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+<script src="{{asset("assets/ufps/plugins/dataTables/js/main.min.js")}}" charset="utf-8"></script>
+<script src="{{asset("assets/ufps/plugins/dataTables/js/jquery.dataTables.min.js")}}" charset="utf-8"></script>
+<script src="{{asset("assets/ufps/plugins/dataTables/js/dataTables.bootstrap.min.js")}}" charset="utf-8"></script>
+
+@endsection
 
 @endsection

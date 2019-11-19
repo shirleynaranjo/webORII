@@ -3,6 +3,8 @@
 namespace weborii\Http\Controllers;
 
 use Illuminate\Http\Request;
+use weborii\Models\Experiencia;
+use weborii\Models\Noticia;
 
 class ExperienciaController extends Controller
 {
@@ -13,7 +15,9 @@ class ExperienciaController extends Controller
      */
     public function index()
     {
-        return view('experiencia.index');
+        $exps = Experiencia::orderBy('idExperiencia','desc')->get();
+        $noticias = Noticia::latest('idNoticia')->take(3)->get();
+        return view('experiencia.index',compact('exps','noticias'));
     }
 
     /**

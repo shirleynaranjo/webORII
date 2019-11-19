@@ -19,11 +19,11 @@ Noticias
 
                 <!--CONTENIDO-->
 
-                <div class="col-md-10 col-sm-8 mb-margin-bottom-30">
+                <div class="col-md-12 col-sm-8 mb-margin-bottom-30">
                         <div class="row">
                                 <div class="col-md-10">
                                         <div class="headline">
-                                                <h1 style="color:#555;">{{$noticia->nombreNoticia}}</h1>
+                                                <h1 style="color:#555;">{{$noticia->tituloNoticia}}</h1>
                                         </div>
                                 </div>
                                 <div class="col-md-12">
@@ -45,33 +45,20 @@ Noticias
                                                 <em>
                                                         <h6 style="color:#aa1916;">
                                                                 <i class="fa fa-calendar"></i> Publicado el día
-                                                                jueves, 09 de mayo del 2019 / No. {{$noticia->idNoticia}} </h6>
+                                                                {{$noticia->fechaPublicacion}} / No. {{$noticia->idNoticia}} </h6>
                                                 </em>
                                         </div>
 
                                         <div class="box-body">
                                                 {{$noticia->descripcionNoticia}}
-                                        </div>
-
-                                        <div class="row margin-bottom-30">
-                                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                                        <blockquote>
-                                                                <p><em>
-                                                                <p>{{$noticia->autoresNoticia}}S<br /></h5>
-                                                                </em></p>
-
-                                                        </blockquote>
-
-                                                </div>
-                                        </div>
-
+                                        </div>                        
                                 </div>
                         </div>
                 </div>
         </div>
         <div class="wrapper">
                 <!-- Inicio Header Noticia-->
-                @include("theme/$theme/footerultimasnoticia")
+                @include("noticia/footerultimasnoticia")
                 <!-- Fin Header Noticias-->
         </div>
 </div>
