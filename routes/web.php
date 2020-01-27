@@ -25,9 +25,10 @@ Route::get('experiencia','ExperienciaController@index')->name('experiencia');
 Route::get('convocatoria','ConvocatoriaController@index')->name('convocatoria');
 //Presentacion
 Route::get('presentacion','PresentacionController@index')->defaults("idPresentacion", "1")->name('presentacion');
-
+Route::get('presentacion/mision','PresentacionController@index')->defaults("idPresentacion", "1")->name('mision');
 //Convenio
 Route::get('mapa','convenioController@index')->name('mapa');
+Route::get('paises','convenioController@indexP')->name('paises');
 //Eventos
 Route::get('evento','EventoController@index')->name('evento');
 Route::get('evento/completa/{idEvento}','EventoController@detalle')->name('evento_completa');

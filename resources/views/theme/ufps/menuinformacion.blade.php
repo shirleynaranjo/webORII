@@ -16,7 +16,7 @@
                             <li style="border:none;"><a href="{{route('presentacion')}}" class="text-submenu"
                                     style="border:none; border-bottom: 1px solid #DDDEDF;"><i
                                         class="fa fa-angle-double-right" aria-hidden="true"></i> Presentación</a></li>
-                            <li style="border:none;"><a href="{{url("")}}" class="text-submenu"
+                            <li style="border:none;"><a href="{{route('mision')}}" class="text-submenu"
                                     style="border:none; border-bottom: 1px solid #DDDEDF;"><i
                                         class="fa fa-angle-double-right" aria-hidden="true"></i> Misión</a></li>
                             <li style="border:none;"><a href="{{url("")}}" class="text-submenu"

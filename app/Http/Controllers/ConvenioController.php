@@ -18,6 +18,13 @@ class ConvenioController extends Controller
         return view('convenio.mapa',compact('noticias'));
     }
 
+    
+    public function indexP()
+    {
+        $noticias = Noticia::latest('idNoticia')->take(3)->get();
+        return view('convenio.paises',compact('noticias'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

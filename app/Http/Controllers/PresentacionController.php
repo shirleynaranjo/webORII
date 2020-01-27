@@ -8,9 +8,12 @@ use weborii\Models\Presentacion;
 
 class PresentacionController extends Controller
 {
-    /** 
-     * 
-     */ 
+   /**
+    * Funcion que busca por el id
+    *
+    * @param [number] $idPresentacion
+    * @return /presentacion/index
+    */
     public function index($idPresentacion)    {
        
         $item = Presentacion::findOrFail($idPresentacion);
