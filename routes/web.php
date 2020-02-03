@@ -27,8 +27,9 @@ Route::get('convocatoria','ConvocatoriaController@index')->name('convocatoria');
 Route::get('presentacion','PresentacionController@index')->defaults("idPresentacion", "1")->name('presentacion');
 Route::get('presentacion/mision','PresentacionController@index')->defaults("idPresentacion", "1")->name('mision');
 //Convenio
-Route::get('mapa','convenioController@index')->name('mapa');
-Route::get('paises','convenioController@indexP')->name('paises');
+Route::get('mapa','ConvenioController@index')->name('mapa');
+//Pais
+Route::get('paises','PaisController@index')->name('paises');
 //Eventos
 Route::get('evento','EventoController@index')->name('evento');
 Route::get('evento/completa/{idEvento}','EventoController@detalle')->name('evento_completa');

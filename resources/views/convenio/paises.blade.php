@@ -20,11 +20,18 @@ Paises
         <div class="row">
 <!--CONTENIDO-->
                 <div class="col-md-12 col-sm-8 mb-margin-bottom-30">
+                        
                         <div class="row">
                                 <div class="col-md-12">
-                                        <div class="headline">
-                                                <h1 style="color:#555;">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Paises</h1>
-                                        </div>
+                                        <label for="idPais">Paises para el mapa de convenios</label>
+                                        <select name="idPais" class="form-control">
+                                                <option value=""> Seleccione..</option>
+                                                @foreach ($paises as $pais)
+                                                        <option value="{{$pais->idPais}}">
+                                                                       {{$pais->nombrePais}}</option>
+                                                    
+                                                @endforeach
+                                        </select>
 
                                 </div>
 
@@ -33,12 +40,7 @@ Paises
 
                 </div>
         </div>
-        <div class="wrapper">
-                        <!-- Inicio Header Noticia-->
-                        @include("noticia/footerultimasnoticia")
-                        <!-- Fin Header Noticias-->
-                </div>
-        </div>
+       
 
 </div>
 

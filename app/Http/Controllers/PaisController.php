@@ -3,9 +3,10 @@
 namespace weborii\Http\Controllers;
 
 use Illuminate\Http\Request;
-use weborii\Models\Noticia;
+use weborii\Models\Pais;
+use DB;
 
-class ConvenioController extends Controller
+class PaisController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,13 +14,11 @@ class ConvenioController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        $noticias = Noticia::latest('idNoticia')->take(3)->get();
-        return view('convenio.mapa',compact('noticias'));
+    {     
+        $paises=DB::table('pais')->get();
+        return view('convenio.paises',["paises"=>$paises]);
+        
     }
-
-    
-   
 
     /**
      * Show the form for creating a new resource.
@@ -28,7 +27,8 @@ class ConvenioController extends Controller
      */
     public function create()
     {
-        //
+     
+
     }
 
     /**
