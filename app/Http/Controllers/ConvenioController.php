@@ -4,6 +4,8 @@ namespace weborii\Http\Controllers;
 
 use Illuminate\Http\Request;
 use weborii\Models\Noticia;
+use Illuminate\Support\Facades\DB;
+use weborii\Models\Convenio;
 
 class ConvenioController extends Controller
 {
@@ -28,7 +30,10 @@ class ConvenioController extends Controller
      */
     public function create()
     {
-        //
+
+        $paises=DB::table('pais')->get();
+        return view('convenio.create',["paises"=>$paises]);
+        
     }
 
     /**
@@ -39,7 +44,18 @@ class ConvenioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $convenio = new Convenio();
+        $convenio->codigoConvenio=$request->codigoConvenio;
+        $convenio->tituloConvenio=$request->tituloConvenio;
+        $convenio->objetoConvenio=$request->objetoConvenio;
+        $convenio->vigenciaConvenio=$request->vigenciaConvenio;
+        $convenio->fechaExpedicion=$request->fechaExpedicion;
+        $convenio->fechaTerminacion=$request->fechaTerminacion;
+        $convenio->idPais=$request->idPais;
+        $convenio->save();
+
+        return back()->with('mensaje','Convenio agregado');
+
     }
 
     /**

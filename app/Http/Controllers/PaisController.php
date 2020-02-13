@@ -15,9 +15,7 @@ class PaisController extends Controller
      */
     public function index()
     {     
-        $paises=DB::table('pais')->get();
-        return view('convenio.paises',["paises"=>$paises]);
-        
+              
     }
 
     /**

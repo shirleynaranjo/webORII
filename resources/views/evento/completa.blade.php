@@ -35,7 +35,7 @@ Evento
                                                         <dd>UFPS</dd>
                                                         <dt><i class="fa fa-calendar"></i><span>Fecha del evento:</span></dt>
                                                         <dd>Del 18 octubre al 30 de noviembre </dd>
-                                                        <dt><i class="fa fa-clock-o"></i><span>Fecha del Hora:</span></dt>
+                                                        <dt><i class="fa fa-clock-o"></i><span>Hora del evento:</span></dt>
                                                         <dd>Ver publicación </dd>
                                                 </dl>                                                       
 

@@ -21,6 +21,7 @@ class CreateConvenioTable extends Migration
             $table->string('vigenciaConvenio',45);
             $table->string('fechaExpedicion',10);
             $table->string('fechaTerminacion',10);   
+            $table->unsignedBigInteger('idPais'); //Relacion con Pais
             $table->timestamps();
             $table->charset='utf8mb4';
             $table->collation='utf8mb4_spanish2_ci';

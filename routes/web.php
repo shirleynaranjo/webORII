@@ -28,8 +28,11 @@ Route::get('presentacion','PresentacionController@index')->defaults("idPresentac
 Route::get('presentacion/mision','PresentacionController@index')->defaults("idPresentacion", "1")->name('mision');
 //Convenio
 Route::get('mapa','ConvenioController@index')->name('mapa');
+Route::get('convenio/create','ConvenioController@create')->name('create');
+Route::post('convenio/create','ConvenioController@store')->name('store');
+
 //Pais
-Route::get('paises','PaisController@index')->name('paises');
+// Route::get('paises','PaisController@index')->name('paises');
 //Eventos
 Route::get('evento','EventoController@index')->name('evento');
 Route::get('evento/completa/{idEvento}','EventoController@detalle')->name('evento_completa');
