@@ -22,6 +22,9 @@ class EventosTableSeeder extends Seeder
             'fechaEvento'=>'Ver informacion',
             'horaEvento'=>'0',
             'descripcion'=>'Convocatorias movilidad',
+            'informacionP'=>'',
+            'informacionI'=>'',
+            'miniatura'=>'',
         ]);
 
         DB::table('evento')->insert([
@@ -31,6 +34,9 @@ class EventosTableSeeder extends Seeder
             'fechaEvento'=>'30 marzo',
             'horaEvento'=>'8:00 am',
             'descripcion'=>'Curso de ingles',
+            'informacionP'=>'',
+            'informacionI'=>'',
+            'miniatura'=>'',
         ]);
 
         DB::table('evento')->insert([
@@ -40,6 +46,9 @@ class EventosTableSeeder extends Seeder
             'fechaEvento'=>'5 mayo',
             'horaEvento'=>'8:00 am',
             'descripcion'=>'Documentos movilidades',
+            'informacionP'=>'',
+            'informacionI'=>'',
+            'miniatura'=>'',
         ]);
         
         

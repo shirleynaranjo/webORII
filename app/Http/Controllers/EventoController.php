@@ -3,6 +3,7 @@
 namespace weborii\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use weborii\Models\Evento;
 use weborii\Models\Noticia;
 
@@ -20,6 +21,10 @@ class EventoController extends Controller
         return view('evento.index', compact('eventos','noticias'));
     }
 
+    public function index1(){
+
+    }
+
     public function detalle($idEvento)
     {
         $evento = Evento::findOrFail($idEvento);
@@ -34,7 +39,7 @@ class EventoController extends Controller
      */
     public function create()
     {
-        //
+        return view('evento.create');
     }
 
     /**
@@ -45,7 +50,8 @@ class EventoController extends Controller
      */
     public function store(Request $request)
     {
-      
+        Evento::create($request->all());
+        return back()->with('mensaje','Evento creado exitosamente');
     }
 
     /**

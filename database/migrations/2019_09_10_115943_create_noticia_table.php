@@ -17,7 +17,9 @@ class CreateNoticiaTable extends Migration
             $table->bigIncrements('idNoticia');
             $table->string('tituloNoticia',500);           
             $table->string('descripcionNoticia',5000);
-            $table->string('fechaPublicacion',500);            
+            $table->string('fechaPublicacion',500);  
+            $table->string('imagen',100)->nullable();   
+            $table->string('video',100)->nullable();        
             $table->timestamps();
             $table->charset='utf8mb4';
             $table->collation='utf8mb4_spanish2_ci';

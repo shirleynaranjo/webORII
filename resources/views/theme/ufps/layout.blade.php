@@ -112,15 +112,15 @@
         <script type="text/javascript" src="{{asset("assets/ufps/js/greensock.js")}}"></script>
         <script type="text/javascript" src="{{asset("assets/ufps/js/layerslider.transitions.js")}}"></script>
         <script type="text/javascript" src="{{asset("assets/ufps/js/layerslider.kreaturamedia.jquery.js")}}"></script>
-        <script type="text/javascript" src="{{asset("assets/ufps/js/custom.min.js")}}"></script>
-        <script type="text/javascript" src="{{asset("assets/ufps/js/app.min.js")}}"></script>
+        <script type="text/javascript" src="{{asset("assets/ufps/js/custom.min.js")}}"></script>        
         <script type="text/javascript" src="{{asset("assets/ufps/owl.carousel.js")}}"></script>
-        <script type="text/javascript" src="{{asset("assets/ufps/js/owl-carousel.min.js")}}"></script>
+        <script type="text/javascript" src="{{asset("assets/ufps/js/owl-carousel.min.js")}}"></script>        
         <script type="text/javascript" src="{{asset("assets/ufps/js/datepicker.min.js")}}"></script>
         <script type="text/javascript" src="{{asset("assets/ufps/js/validation.min.js")}}"></script>
         <script type="text/javascript" src="{{asset("assets/ufps/js/jquery.mCustomScrollbar.concat.min.js")}}"></script>
         <script type="text/javascript" src="{{asset("assets/ufps/js/owl-recent-works.min.js")}}"></script>
         <script type="text/javascript" src="{{asset("assets/ufps/js/wow.min.js")}}"></script>
+        <script type="text/javascript" src="{{asset("assets/ufps/js/app.min.js")}}"></script>
 
 
         <script>
@@ -138,10 +138,10 @@
                 autoplayHoverPause:true
                 });
         </script>
+        
         <!--Mapa-->
         <section class="script">
             @yield('script')
-        </section>
-
+        </section>  
 
     </body>

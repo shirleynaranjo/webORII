@@ -4,7 +4,7 @@ Paises
 @endsection
 @section('content')
 @section('titulo1')
-Paises
+Convenios
 @endsection
 @section('style')
 <link rel="stylesheet" type="text/css" href="{{asset("assets/ufps/plugins/fancybox/css/jquery.fancybox.min.css")}}">

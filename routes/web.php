@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use Illuminate\Support\Facades\Route;
 use weborii\Http\Controllers\ExperienciaController;
 use weborii\Http\Controllers\NoticiaController;
 
@@ -30,9 +30,7 @@ Route::get('presentacion/mision','PresentacionController@index')->defaults("idPr
 Route::get('mapa','ConvenioController@index')->name('mapa');
 Route::get('convenio/create','ConvenioController@create')->name('create');
 Route::post('convenio/create','ConvenioController@store')->name('store');
-
-//Pais
-// Route::get('paises','PaisController@index')->name('paises');
 //Eventos
 Route::get('evento','EventoController@index')->name('evento');
 Route::get('evento/completa/{idEvento}','EventoController@detalle')->name('evento_completa');
+Route::get('evento/create','EventoController@create')->name('create');

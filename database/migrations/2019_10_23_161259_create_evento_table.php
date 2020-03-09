@@ -19,7 +19,10 @@ class CreateEventoTable extends Migration
             $table->string('lugarEvento',500);
             $table->string('fechaEvento',500);
             $table->string('horaEvento',500);
-            $table->string('descripcion',5000);
+            $table->string('descripcion',1000);
+            $table->string('informacionP',100)->nullable();           
+            $table->string('informacionI',100)->nullable();
+            $table->string('miniatura',100);
             $table->timestamps();
             $table->charset='utf8mb4';
             $table->collation='utf8mb4_spanish2_ci';
