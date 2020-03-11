@@ -4,12 +4,18 @@ namespace weborii\Http\Controllers;
 
 
 use Illuminate\Http\Request;
+use PHPUnit\Framework\Error\Notice;
 use weborii\Http\Controllers\Controller;
 use weborii\Models\Noticia;
 
 
 class NoticiaController extends Controller
 {
+
+    public function getNoticias(){
+        $noticias = Noticia::all();
+        return response()->json($noticias);
+    }
     /**
      * Display a listing of the resource.
      *

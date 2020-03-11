@@ -34,3 +34,7 @@ Route::post('convenio/create','ConvenioController@store')->name('store');
 Route::get('evento','EventoController@index')->name('evento');
 Route::get('evento/completa/{idEvento}','EventoController@detalle')->name('evento_completa');
 Route::get('evento/create','EventoController@create')->name('create');
+
+//API
+
+Route::get('api/v1/noticias','NoticiaController@getNoticias');
