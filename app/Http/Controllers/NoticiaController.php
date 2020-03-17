@@ -12,9 +12,14 @@ use weborii\Models\Noticia;
 class NoticiaController extends Controller
 {
 
-    public function getNoticias(){
-        $noticias = Noticia::all();
+    public function getNoticias(Request $request){
+        $noticias = Noticia::orderBy('idNoticia','desc')->get();
         return response()->json($noticias);
+    }
+
+    public function getNoticia(Request $request){
+        $noticia = Noticia::findorFail($request->id);
+        return response()->json($noticia);
     }
     /**
      * Display a listing of the resource.
@@ -26,7 +31,13 @@ class NoticiaController extends Controller
     $noticias = Noticia::orderBy('idNoticia','desc')->get();
     return view('noticia.index',compact('noticias'));
     }
-
+/**
+ * Undocumented function
+ *
+ * @param [Noticia] $idNoticia
+ * @return view 
+ */
+   
     public function detalle($idNoticia)
     {
         $noticia = Noticia::findOrFail($idNoticia);

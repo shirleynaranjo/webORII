@@ -10,6 +10,22 @@ use weborii\Models\Noticia;
 class EventoController extends Controller
 {
     /**
+     * Undocumented function
+     *
+     * @param Request $request
+     * @return void
+     */
+    public function getEventos(Request $request){
+        $eventos = Evento::orderBy('idEvento','desc')->get();
+        return response()->json($eventos);
+    }
+
+    public function getEvento(Request $request){
+        $evento = Noticia::findorFail($request->id);
+        return response()->json($evento);
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response

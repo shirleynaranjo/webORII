@@ -38,3 +38,7 @@ Route::get('evento/create','EventoController@create')->name('create');
 //API
 
 Route::get('api/v1/noticias','NoticiaController@getNoticias');
+Route::get('api/v1/noticias/{id}','NoticiaController@getNoticia');
+
+Route::get('api/v1/eventos','EventoController@getEventos');
+Route::get('api/v1/eventos/{id}','EventoController@getEvento');
