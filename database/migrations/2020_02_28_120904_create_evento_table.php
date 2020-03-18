@@ -15,14 +15,13 @@ class CreateEventoTable extends Migration
     {
         Schema::create('evento', function (Blueprint $table) {
             $table->bigIncrements('idEvento');
-            $table->string('tituloEvento',500);           
+            $table->string('tituloEvento',500);     
             $table->string('lugarEvento',500);
             $table->string('fechaEvento',500);
             $table->string('horaEvento',500);
-            $table->string('descripcion',1000);
-            $table->string('informacionP',100)->nullable();           
-            $table->string('informacionI',100)->nullable();
-            $table->string('miniatura',100);
+            $table->string('descripcionEvento',1000);       
+            $table->string('informacionEvento',200);             
+            $table->string('imagenMiniatura',200)->nullable();            
             $table->timestamps();
             $table->charset='utf8mb4';
             $table->collation='utf8mb4_spanish2_ci';

@@ -8,6 +8,6 @@ class Evento extends Model
 {
     protected $table='evento';
     protected $primaryKey = 'idEvento';
-    protected $fillable = ['tituloEvento','lugarEvento','fechaEvento','horaEvento','descripcion','informacionP','informacionI','miniatura'];
+    protected $fillable = ['tituloEvento','lugarEvento','fechaEvento','horaEvento','descripcionEvento','informacionEvento','imagenMiniatura'];
     protected $guarded = ['idEvento'];
 }

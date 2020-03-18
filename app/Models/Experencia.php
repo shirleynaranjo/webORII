@@ -4,10 +4,10 @@ namespace weborii\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Experiencia extends Model
+class Experencia extends Model
 {
     protected $table='experiencia';
     protected $primaryKey = 'idExperiencia';
-    protected $fillable = ['enlace','descripcion'];
+    protected $fillable = ['descripcionExperiencia','enlace'];
     protected $guarded = ['idExperiencia'];
 }
